@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-wrapper {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.input-section {
+  background-color: #a8f3ff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  width: 40%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.check {
+  background-color: #d84ce3;
+  color: white;
+}
+
+.btn.clear {
+  background-color: #ff6464;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.weather-display {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #d84ce3;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+}
