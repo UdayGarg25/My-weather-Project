@@ -21,8 +21,8 @@ const App = () => {
         `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/${date}?unitGroup=metric&key=ATVZRMAT6PNLEF3NWXH6FULXH`
       );
       setData(res.data.days[0]);
-    } catch (error) {
-      alert("Unable to fetch weather data. Check input.");
+    } catch {
+      alert("Error fetching weather data.");
     }
   };
 
@@ -35,11 +35,11 @@ const App = () => {
   }, [data]);
 
   const clearAll = () => {
+    setLocation("");
+    setDate("");
     setCondition("");
     setTemp("");
     setFeelslike("");
-    setLocation("");
-    setDate("");
   };
 
   return (
